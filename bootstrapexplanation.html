@@ -1,0 +1,187 @@
+<!--Nicholas Bodeis
+	CIS 255 70 SP18
+	Description: Explanation of Bootstrap classes used in Assignment 4
+	!-->
+	
+<!DOCTYPE html>
+<html>
+<head>
+<title>BootStrap Explanations</title>
+<link rel="icon" href="burger.png" type="image/png">
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+
+
+.navbar{
+	margin-bottom: 0;
+	border-radius: 0;
+	background-color: #011D00;
+	color: #FFF;
+	padding: 1% 0;
+	font-size 2.5em;
+	border: 2px solid #FFF;
+	}
+	
+.navbar-brand {
+	float left;
+	min-height; 55px;
+	padding: 0 15px 5px;
+}
+
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+	color: #FFF;
+	background-color: #011D00;
+}
+
+.navbar-inverse .navbar-nav li a{
+	color: #D5D5D5
+}
+
+.carousel-caption{
+	top: 50%;
+	transform: translate(30%,20%);
+	text-transform: uppercase;
+	}
+
+.btn{
+	font-size: 20px;
+	color: #FFF;
+	padding: 12px 22px;
+	background: #011D00;
+	border: 2px solid #FFF;
+}
+
+.container{
+	margin: 4% auto;
+}
+
+@media (max-width: 600px) {
+	.carousel-caption{
+		display:none;
+	}
+	
+	#icon{
+		max-width: 150px;
+	}
+	
+	h4{
+		font-size: 1em;
+	}
+}
+
+#icon{
+	max-width: 200px;
+	margin: 1% auto;
+}
+
+footer{
+	width: 100%;
+	background-color: #011D00;
+	padding: 3%;
+	color: #FFF;
+}
+
+
+</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-left">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="Murdogs Logo.jpg" width="50" height="60"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#">Welcome!</a></li>
+					<li><a href="https://csis.svsu.edu/~ngbodeis/cis255/murdogsdinerbootstrap.html">Back to Murdog's!</a></li>
+			</div>
+		</div>
+	</nav>
+    
+    
+    <h1>Bootstrap Explanations</h1>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-3 col-sm-6 col-xs-12">
+				<h3>navbar-brand</h3>
+				<p>I used <b>navbar-brand</b> to be able to fit the logo of the diner into the navbar. This allows me to fit it inside nicely, and let's me adjust the padding, height, etc. Many popular websites do this, as it gives more feeling to the navagation bar.</p>
+			</div>
+			
+			<div class="col-md-6">
+				<h3>carousel slide</h3>
+				<p>I used the <b>carousel slide</b> on the site to be able th have it automatically go through pictures. This gives the site a more professional feel, and allows the users to look at something else when visting the site, while making it more active.</p>
+			</div>
+			
+			<div class="col-md-6">
+				<h3>carousel-indicators</h3>
+				<p>I also used <b>carousel-indicators</b> to allow the user to see which image was sliding by. This let's them know how many images are on the slide, and if there is any important information that they could be possibly missing out on.</p>
+			</div>
+			
+			<div class="col-md-6">
+				<h3>navbar</h3>
+				<p>I used <b>navbar</b> on the website to make it easier for the user to find what they're looking for quickly. Almost every site has a navbar, so creating a useful navbar adds legitimacy to the website for users.</p>
+			</div>
+			
+			<div class="col-md-6">
+				<h3>container-fluid</h3>
+				<p>I used <b>container-fluid</b> on the navbar and on the footer, to create a more solid feel to the website. Having a border at the top and bottom of a site helps the user look towards the middle to find the important information that they are looking for.</p>
+			</div>
+			
+			<div class="col-md-6">
+				<h3>row</h3>
+				<p>I used <b>row</b> to be able to fit the everything into nice evenly space accurate spaces. It allowed me to create multiple columns, and get everything nice and organized. It made the website's information to be in a neat collective specified area.</p>
+			</div>
+			
+			<div class="col-md-6">
+				<h3>sr-only</h3>
+				<p>I used <b>sr-only</b> class to hide information used for screen readers. Screen readers are forms of assistive technology, which help the seeing-impaired and other applications that use such things to say vocally what certain things do. It's to help with compliance for the government (<a href="https://www.section508.gov/" rel="nofollow noreferrer">https://www.section508.gov/</a>). Drew Ryan in his youtube video does not explain what it's for, and it was interesting reading about it's purpose.</p>
+			</div>
+			
+			<div class="col-md-6">
+				<h3>collapse</h3>
+				<p>I used <b>collapse</b> on a couple of my containers to preserve space to the random user just passing by. Instead of displaying all of the information at once, it allows the user to decide what's important or valuable to them, instead of just having them search through everything that is already presented.</p>
+			</div>
+			
+			<div class="col-md-6">
+				<h3>float-*-left</h3>
+				<p>I used <b>float left</b> to help align certain the logo to the left side of the navbar. This way it disrupts the logo from the list items on the navbar and allows the user to feel that the page has more symmetry. The float is a very useful tool and it allows you to divide the page easily and push certain items to one side.</p>
+			</div>
+			
+			<div class="col-md-6">
+				<h3>border-white</h3>
+				<p>I used <b>border-white</b> around my navbar to give it a little bit more of design. It helps it pop out more and stand out from the main page of the website as almost an attachment rather that put together. This helps bring creativity to the website and also helps the user differentiate from the information.</p>
+			</div>
+			
+			<div class="col-md-6">
+				<h3>Pros of Using Bootstrap</h3>
+				<p>I personally think there is way more pros to using Bootstrap than Wordpress. Bootstrap allows you to literally create you're website, rather than just pick a theme and put what you want on it. With Bootstrap you're able to define how you want your website to look, and how exactly you want it to be spaced out. It allows you to create you own buttons and put images where every you like, and allow you to have the individuality of your website so that it doesn't just resemble a cookie cutter webpage. The navbar functionality and other classes that Bootstrap has makes it an obvious choice in designing your own website.</p>
+			</div>
+			
+			<div class="col-md-6">
+				<h3>Cons of Using Bootstrap</h3>
+				<p>The biggest con to using Bootstrap compared to Wordpress is the time it takes to create. With Wordpress you can load a theme and just input the text and images that you need to make your website functional, while with Bootstrap you have to physically code every inch of it. I think once Bootstrap and web design became super easy to a person, I don't think that it would be that much of a hassle though to just create a site using Bootstrap rather than WordPress.</p>
+			</div>
+			
+		</div>
+	</div>	
+</body>
+
+<footer class="container-fluid text-center">
+</footer>
+
+</html>
